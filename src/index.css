@@ -1,0 +1,22 @@
+:root {
+  --primary-color: #733C3E;
+  --secondary-color: #59733C;
+  --clr-white: #fff;
+}
+.txt-clr {
+  color: var(--primary-color);
+}
+.custom-border {
+  border-bottom: 1px solid #b2574d6e;
+  letter-spacing: 1px;
+}
+.btn-clr {
+  background-color: var(--primary-color);
+  color: var(--clr-white);
+  transition: 250ms ease-in-out;
+  font-size: 1.1rem;
+}
+.btn-clr:hover {
+  color: var(--primary-color);
+  background-color: var(--clr-white);
+}

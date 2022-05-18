@@ -15,12 +15,17 @@ const EventsList = () => {
   }, [dispatch])
 
   return (
-    
-    <div className="Events container mx-2 p-3 rounded example-1 scrollbar-cyan ">
-      {loading && <p>loading...</p>}
-      { events.map(event => <EventCard key={event.id} event={event} /> )}
+
+    <div className="container">
+      <div className='text-center my-3 custom-border w-100 mx-auto'>
+        <span className='text-uppercase h4'>my events</span>
+      </div>
+      <div className="Events pe-2 rounded example-1 scrollbar-cyan ">
+        { loading && <p>loading...</p> }
+        { events.map(event => <EventCard key={event.id} event={event} /> )}
+      </div>
     </div>
-    
+
   )
 }
 

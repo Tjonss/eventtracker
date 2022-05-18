@@ -1,12 +1,5 @@
-.footer-clr {
-  background-color:  1px solid #42120d;
-  color: #B2574D;
-}
 .Footer {
-  padding: .7rem;
+  padding: .2rem;
   position: absolute;
   border-radius: 0 0 10px 10px;
-}
-.Footer .clr {
-  
 }

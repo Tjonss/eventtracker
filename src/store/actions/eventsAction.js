@@ -5,7 +5,7 @@ export const getEvents = () => {
   return async dispatch => {
     dispatch(setEvents(true))
     try {
-      const res = await axios.get('http://localhost:3000/events')
+      const res = await axios.get('http://localhost:8080/events')
       dispatch(eventsSuccess(res.data))
     } catch (err) { 
       dispatch(eventsFailure(err.message))

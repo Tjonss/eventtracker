@@ -11,15 +11,13 @@ const EventCard = ({ event }) => {
           <span className='mx-2'>-</span>
           <span>10:34</span>
         </div>
+          <button className='btn btn-clr delete-btn'><i className="fa-solid fa-trash-can fs-6"></i></button>
       </div>
-      <div className='position-relative'>
-        <Link to='/events/:id' className="card-body pt-2 px-2 d-flex justify-content-between">
-          <span className="card-text w-75 fst-italic">{event.desc.slice(0, 100)}...</span>
-        </Link>
-        <div className='d-flex justify-content-center flex-column'>
-          <button className='btn btn-clr py-0 px-2 position-absolute m-3 end-0 bottom-0'><i className="fa-solid fa-trash-can"></i></button>
+      <Link to='/events/:id' className='event-body'>
+        <div className="card-body py-2 ps-2">
+          <span className="card-text w-75 fst-italic">{event.desc.slice(0, 55)}...</span>
         </div>
-      </div>
+      </Link>
     </div>
   )
 }

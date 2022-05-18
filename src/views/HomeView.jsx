@@ -1,10 +1,13 @@
 import React from 'react'
+import Login from '../components/LoginView/Login'
+import Register from '../components/LoginView/Register'
 
 const HomeView = () => {
   return (
-    <div className="container">
-      <h4>Keep track on your events</h4>
-    </div>
+    <>
+    {/* <Register /> */}
+    <Login />
+    </>
   )
 }
 
