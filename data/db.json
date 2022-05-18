@@ -1,0 +1,53 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "title" : "Bada",
+      "desc": "Jag ska gå ut och bada idag",
+      "completed": false
+    },
+    {
+      "id": "2",
+      "title" : "Bada",
+      "desc": "Jag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idag ",
+      "completed": false
+    },
+    {
+      "id": "3",
+      "title" : "Äta",
+      "desc": "Jag ska gå ut och äta idag",
+      "completed": false
+    },
+    {
+      "id": "4",
+      "title" : "Äta",
+      "desc": "Jag ska gå ut och äta idag",
+      "completed": false
+    },
+    {
+      "id": "5",
+      "title" : "Äta",
+      "desc": "Jag ska gå ut och äta idag",
+      "completed": false
+    },
+    {
+      "id": "6",
+      "title" : "Äta",
+      "desc": "Jag ska gå ut och äta idag",
+      "completed": false
+    },
+    {
+      "id": "7",
+      "title" : "Äta",
+      "desc": "Jag ska gå ut och äta idag",
+      "completed": false
+    },
+    {
+      "id": "8",
+      "title" : "Äta",
+      "desc": "Jag ska gå ut och äta idag",
+      "completed": false
+    }
+    
+  ]
+}

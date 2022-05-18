@@ -1,0 +1,29 @@
+.Navbar {
+  background-color: var(--primary-color);
+  border-radius: 10px 10px 0 0;
+  margin: auto!important;
+}
+.Navbar a {
+  transition: all 200ms ease-in;
+  font-size: 1.2rem;
+}
+.active {
+  color: #fff;
+  text-decoration: underline;
+  margin-inline: 1rem;
+}
+.active:hover {
+  color: white;
+  transition-property: opacity, left;
+  transition-duration: 3s, 5s, 2s, 1s;
+}
+.inactive {
+  transition: all 200ms ease-out;
+  color: #fff;
+  margin-inline: 1rem;
+  color: rgb(196, 195, 195);
+  
+}
+.inactive:hover {
+  color: white;
+}
