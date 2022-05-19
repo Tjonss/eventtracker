@@ -1,42 +1,44 @@
 import actiontypes from '../actiontypes';
 
 const initState = {
-  data: [],
+  data: null,
   loading: false,
   error: null
 }
 
-const eventsReducer = (state = initState, action) => {
+const eventReducer = (state = initState, action) => {
+
   switch(action.type) {
 
-    case actiontypes().events.getEvents: 
+    case actiontypes().singleEvent.getSingleEvent: {
       return {
         ...state,
+        data: null,
         loading: true,
         error: null
       }
-    
-    case actiontypes().events.getEventsSuccess: 
+    }
+    case actiontypes().singleEvent.getSingleEventSuccess: {
       return {
         ...state,
         data: action.payload,
         loading: false,
         error: null
       }
-    
-    case actiontypes().events.getEventsFailure: 
+    }
+    case actiontypes().singleEvent.getSingleEventFailure: {
       return {
         ...state,
-        data: [],
+        data: null,
         loading: false,
         error: action.payload
       }
-    
+    }
+
     default:
       return state
-    }
   }
 
+}
 
-
-export default eventsReducer
+export default eventReducer

@@ -18,7 +18,14 @@
   background-color: #fcf8f8;
   font-weight: 600;
 }
-
+.Event-detail {
+  min-height: 360px;
+  max-width: 500px;
+}
+.event-span {
+  border-bottom: 1px solid #B2574D;
+  padding-bottom: 2px;
+}
 .delete-btn {
   padding: .1em .5em;
 }
@@ -29,7 +36,7 @@
 }
 
 .scrollbar-deep-purple::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
   background-color: transparent;
 }
 
@@ -54,10 +61,12 @@
 
 .scrollbar-cyan::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: var(--primary-color)
+  background-color: var(--primary-color);
+  
 }
 
 .scrollbar-cyan {
+  margin-left: 1rem;
   scrollbar-color: var(--primary-color);
 }
 
@@ -67,7 +76,7 @@
 }
 
 .scrollbar-dusty-grass::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
   background-color: var(--primary-color);
 }
 
@@ -83,7 +92,7 @@
 }
 
 .scrollbar-ripe-malinka::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
   background-color: #B2574D;
 }
 

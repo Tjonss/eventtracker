@@ -2,20 +2,25 @@ const actiontypes = () => {
   return {
     events: {
       getEvents: 'GET_EVENTS',
-      eventsSuccess: 'GET_EVENTS_SUCCESS',
-      eventsFailure: 'GET_EVENTS_FAILURE'
+      getEventsSuccess: 'GET_EVENTS_SUCCESS',
+      getEventsFailure: 'GET_EVENTS_FAILURE'
     },
     singleEvent: {
-      addEvent: 'ADD_EVENT',
+      getSingleEvent: 'GET_SINGLE_EVENT',
+      getSingleEventSuccess: 'GET_SINGLE_EVENT_SUCCESS',
+      getSingleEventFailure: 'GET_SINGLE_EVENT_FAILURE',
+    },
+    handleEvent: {
+      createEvent: 'CREATE_EVENT',
       deleteEvent: 'DELETE_EVENT',
-      completedEvent: 'COMPLETED_EVENT'
+      handleEventSuccess: 'HANDLE_EVENT_SUCCESS',
+      handleEventFailure: 'HANDLE_EVENT_FAILURE',
     },
     auth: {
       loading: 'AUTH_LOADING',
       authFailure: 'AUTH_FAILURE',
       authSuccess: 'AUTH_SUCCESS',
     }
-    
   }
 }
 

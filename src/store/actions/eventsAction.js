@@ -6,9 +6,9 @@ export const getEvents = () => {
     dispatch(setEvents(true))
     try {
       const res = await axios.get('http://localhost:8080/events')
-      dispatch(eventsSuccess(res.data))
+      dispatch(getEventsSuccess(res.data))
     } catch (err) { 
-      dispatch(eventsFailure(err.message))
+      dispatch(getEventsFailure(err.message))
     }
   }
 }
@@ -19,17 +19,15 @@ const setEvents = payload => {
     payload
   }
 }
-
-const eventsSuccess = events => {
+const getEventsSuccess = events => {
   return {
-    type: actiontypes().events.eventsSuccess,
+    type: actiontypes().events.getEventsSuccess,
     payload: events
   }
 }
-
-const eventsFailure = err => {
+const getEventsFailure = err => {
   return {
-    type: actiontypes().events.eventsFailure,
+    type: actiontypes().events.getEventsFailure,
     payload: err
   }
 }

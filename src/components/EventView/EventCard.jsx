@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const EventCard = ({ event }) => {
@@ -13,7 +12,7 @@ const EventCard = ({ event }) => {
         </div>
           <button className='btn btn-clr delete-btn'><i className="fa-solid fa-trash-can fs-6"></i></button>
       </div>
-      <Link to='/events/:id' className='event-body'>
+      <Link to={`/events/${event.id}`} className='event-body'>
         <div className="card-body py-2 ps-2">
           <span className="card-text w-75 fst-italic">{event.desc.slice(0, 55)}...</span>
         </div>

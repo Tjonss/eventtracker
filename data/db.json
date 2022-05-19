@@ -2,52 +2,30 @@
   "events": [
     {
       "id": "1",
-      "title" : "Bada",
+      "title": "Bada",
       "desc": "Jag ska gå ut och bada idag",
       "completed": false
     },
     {
-      "id": "2",
-      "title" : "Bada",
-      "desc": "Jag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idagJag ska gå ut och bada idag ",
-      "completed": false
+      "title": "asdas",
+      "desc": "asdasd",
+      "date": "",
+      "time": "",
+      "id": "qMeG22R"
     },
     {
-      "id": "3",
-      "title" : "Äta",
-      "desc": "Jag ska gå ut och äta idag",
-      "completed": false
+      "title": "asdas",
+      "desc": "asdasd",
+      "date": "2022-04-27",
+      "time": "01:16",
+      "id": "BWM-nbv"
     },
     {
-      "id": "4",
-      "title" : "Äta",
-      "desc": "Jag ska gå ut och äta idag",
-      "completed": false
-    },
-    {
-      "id": "5",
-      "title" : "Äta",
-      "desc": "Jag ska gå ut och äta idag",
-      "completed": false
-    },
-    {
-      "id": "6",
-      "title" : "Äta",
-      "desc": "Jag ska gå ut och äta idag",
-      "completed": false
-    },
-    {
-      "id": "7",
-      "title" : "Äta",
-      "desc": "Jag ska gå ut och äta idag",
-      "completed": false
-    },
-    {
-      "id": "8",
-      "title" : "Äta",
-      "desc": "Jag ska gå ut och äta idag",
-      "completed": false
+      "title": "Hejsan",
+      "desc": "Kasta snöbollar",
+      "date": "2022-04-14",
+      "time": "05:21",
+      "id": "sWTYStP"
     }
-    
   ]
 }
