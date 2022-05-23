@@ -2,8 +2,6 @@ const actiontypes = () => {
   return {
     events: {
       getEvents: 'GET_EVENTS',
-      deleteEvent: 'DELETE_EVENT',
-      sortEvents: 'SORT_EVENTS',
       getEventsSuccess: 'GET_EVENTS_SUCCESS',
       getEventsFailure: 'GET_EVENTS_FAILURE'
     },
