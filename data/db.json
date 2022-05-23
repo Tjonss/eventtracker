@@ -1,31 +1,18 @@
 {
   "events": [
     {
-      "id": "1",
-      "title": "Bada",
-      "desc": "Jag ska gå ut och bada idag",
-      "completed": false
+      "title": "Gå och bada",
+      "desc": "jag ska gå och bada idag",
+      "date": "2022-05-06",
+      "time": "16:44",
+      "id": 1
     },
     {
-      "title": "asdas",
-      "desc": "asdasd",
-      "date": "",
-      "time": "",
-      "id": "qMeG22R"
-    },
-    {
-      "title": "asdas",
-      "desc": "asdasd",
+      "title": "dsakfmaklsdfsdfas",
+      "desc": "asdfasdfas",
       "date": "2022-04-27",
-      "time": "01:16",
-      "id": "BWM-nbv"
-    },
-    {
-      "title": "Hejsan",
-      "desc": "Kasta snöbollar",
-      "date": "2022-04-14",
-      "time": "05:21",
-      "id": "sWTYStP"
+      "time": "16:52",
+      "id": 2
     }
   ]
 }

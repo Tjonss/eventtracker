@@ -1,14 +1,17 @@
 .Event-card {
-  min-height: 105px;
-  max-height: 105px;
+  min-height: 70px;
+  max-height: 80px;
   overflow: hidden;
 }
 .Event-card .event-body {
-  height: 64px;
+  min-height: 35px;
+}
+.Event-card .event-body:hover {
+  color: var(--primary-color);
 }
 .Event-card .card-header {
   background-color:#C48E90;
-  color: rgb(242, 242, 242);
+  color: rgb(255, 255, 255);
 }
 .Event-card a {
   color: rgb(61, 61, 61);
@@ -25,9 +28,6 @@
 .event-span {
   border-bottom: 1px solid #B2574D;
   padding-bottom: 2px;
-}
-.delete-btn {
-  padding: .1em .5em;
 }
 
 .scrollbar-deep-purple::-webkit-scrollbar-track {
@@ -116,13 +116,13 @@
   width: 6px;
 }
 
-.example-1 {
+.event-scrollbar {
   position: relative;
   overflow-y: scroll;
-  height: 410px;
+  max-height: 400px;
 }
 .example-2 {
   position: relative;
   overflow-y: scroll;
-  height: 280px;
+  max-height: 280px;
 }

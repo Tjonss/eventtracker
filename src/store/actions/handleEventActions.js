@@ -14,6 +14,7 @@ export const createNewEvent = (event) => {
 }
 
 
+
 const createEvent = (payload) => {
   return {
     type: actiontypes().handleEvent.createEvent,

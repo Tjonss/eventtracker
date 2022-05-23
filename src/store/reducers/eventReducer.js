@@ -18,6 +18,7 @@ const eventReducer = (state = initState, action) => {
         error: null
       }
     }
+
     case actiontypes().singleEvent.getSingleEventSuccess: {
       return {
         ...state,

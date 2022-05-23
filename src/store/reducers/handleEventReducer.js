@@ -11,10 +11,9 @@ const handleEventReducer = (state = initState, action) => {
 
     case actiontypes().handleEvent.createEvent: 
     return {
-      ...state,
       data: null,
       loading: true,
-      error: null
+      error: action.payload
     }
 
     case actiontypes().handleEvent.handleEventSuccess: 

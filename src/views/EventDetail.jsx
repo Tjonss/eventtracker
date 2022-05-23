@@ -19,13 +19,12 @@ const EventDetail = () => {
   return (
     <>
       
-      <div className='container '>
+      <div className='container'>
         <div className='text-center mt-3 custom-border w-100 mx-auto'>
           <span className='text-uppercase h4'>this event</span>
         </div>
         <Link to='/events' className='text-black fs-3'><i className="fa-solid fa-arrow-left-long"></i></Link>
         { event &&
-         
           <div className="container card Event-detail example-2 mx-auto scrollbar-cyan thin pe-2">
             <div className=" text-center fs-3 p-0 card-header mt-1">
               <span className=''>{event.title}</span>
@@ -33,14 +32,10 @@ const EventDetail = () => {
             <div className="card-body p-3">
               <span className="card-text">{event.desc}</span>
             </div>
-            <div className="card-footer text-muted d-flex justify-content-between">
-              <span className=''>2022-04-12 - 10:34</span>
-              <button className='btn btn-clr delete-btn'><i className="fa-solid fa-trash-can fs-6"></i></button>
+            <div className="card-footer text-muted text-center">
+              <span className=''>{event.date} - {event.time}</span>
             </div>
           </div>
-          
-          
-          
         }
 
         { loading && <p>Loading...</p>}
