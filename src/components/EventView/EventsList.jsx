@@ -15,7 +15,7 @@ const EventsList = () => {
   }, [dispatch])
 
   return (
-    <div className="Events rounded pe-1">
+    <div className="Events rounded pe-1 Event-card event-scrollbar mx-auto scrollbar-cyan thin mb-1">
       { loading && <p>loading...</p> }
       { events.map(event => <EventCard key={event.id} event={event} /> )}
     </div>

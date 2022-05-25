@@ -1,0 +1,87 @@
+{
+  "events": [
+    {
+      "title": "asd",
+      "desc": "asd",
+      "timestamps": "2022-06-18T00:51",
+      "id": 1
+    },
+    {
+      "title": "jsodfnaosdf",
+      "desc": "asdasdasdasdasd",
+      "timestamps": "2022-05-29T00:56",
+      "id": 2
+    },
+    {
+      "title": "asdasdasd",
+      "desc": "asdasdasd",
+      "timestamps": "2022-05-14T01:07",
+      "id": 3
+    },
+    {
+      "title": "adfsdfasdfasdfasdfasdfasdfasdfas",
+      "desc": "asdfasdfasdf",
+      "timestamps": "2022-04-29T01:07",
+      "id": 4
+    },
+    {
+      "title": "adsfsdfas",
+      "desc": "asdfasdfasd",
+      "timestamps": "2022-05-27T01:09",
+      "id": 5
+    },
+    {
+      "title": "asdfasdfasdf",
+      "desc": "asdf",
+      "timestamps": "2022-05-01T03:06",
+      "id": 6
+    },
+    {
+      "title": "asdasdasdasdasdasdasdasdasdasd",
+      "desc": "asdasd{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}as",
+      "timestamps": "2022-05-06T01:23",
+      "id": 7
+    },
+    {
+      "title": "jonas",
+      "desc": "hej jag heter j{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}vonas",
+      "timestamps": "2022-05-22T01:27",
+      "id": 8
+    },
+    {
+      "title": "hej",
+      "desc": "hejekfanöfsdfönasdfasdfasdfasdf{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}",
+      "timestamps": "2022-05-15T01:28",
+      "id": 9
+    },
+    {
+      "title": "eafkösenfkasndfaskjdnöfkjamsdf",
+      "desc": "adsfasd",
+      "timestamps": "2022-05-28T07:33",
+      "id": 10
+    }
+  ],
+  "users": [
+    {
+      "email": "jonas@mail.se",
+      "password": "$2a$10$lWcazsxHIJtPbFq3OxNnceAWjxyB4c5IC0s7Es8WXc0T8A0XK8wsi",
+      "firstName": "jonas",
+      "lastName": "engström",
+      "id": 1
+    },
+    {
+      "email": "jonasjonas@mail.se",
+      "password": "$2a$10$s1XWxlyzugSz5HLkldMNNu1toXXcHCFTeym.Z3QIvu4dEx9X66Bcq",
+      "firstName": "jonas",
+      "lastName": "jonas",
+      "id": 2
+    },
+    {
+      "email": "conny@mail.se",
+      "password": "$2a$10$lHpUBeR58Xb7/R6xR9eyy.hxyZEL9Vy71lW44YBC1qQMoHvhFQf86",
+      "firstName": "jonas",
+      "lastName": "conny",
+      "id": 3
+    }
+  ]
+}

@@ -2,7 +2,7 @@ import { Link, useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { useEffect } from 'react'
 import { getOneEvent } from '../store/actions/eventAction' 
-
+import moment from 'moment'
 
 const EventDetail = () => {
 
@@ -18,7 +18,6 @@ const EventDetail = () => {
 
   return (
     <>
-      
       <div className='container'>
         <div className='text-center mt-3 custom-border w-100 mx-auto'>
           <span className='text-uppercase h4'>this event</span>
@@ -33,7 +32,7 @@ const EventDetail = () => {
               <span className="card-text">{event.desc}</span>
             </div>
             <div className="card-footer text-muted text-center">
-              <span className=''>{event.date} - {event.time}</span>
+              <span className=''>{moment(event.timestamps).calendar()}</span>
             </div>
           </div>
         }

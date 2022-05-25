@@ -12,13 +12,14 @@ const actiontypes = () => {
     },
     handleEvent: {
       createEvent: 'CREATE_EVENT',
-      handleEventSuccess: 'HANDLE_EVENT_SUCCESS',
-      handleEventFailure: 'HANDLE_EVENT_FAILURE',
+      createEventSuccess: 'CREATE_EVENT_SUCCESS',
+      createEventFailure: 'CREATE_EVENT_FAILURE',
     },
     auth: {
       loading: 'AUTH_LOADING',
-      authFailure: 'AUTH_FAILURE',
       authSuccess: 'AUTH_SUCCESS',
+      authFailure: 'AUTH_FAILURE',
+      logout: 'USER_LOGOUT'
     }
   }
 }

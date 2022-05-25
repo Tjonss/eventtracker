@@ -11,12 +11,13 @@ const handleEventReducer = (state = initState, action) => {
 
     case actiontypes().handleEvent.createEvent: 
     return {
-      data: null,
+      ...state,
+      data: [],
       loading: true,
-      error: action.payload
+      error: null
     }
 
-    case actiontypes().handleEvent.handleEventSuccess: 
+    case actiontypes().handleEvent.createEventSuccess: 
       return {
         ...state,
         data: [...state.data, action.payload],
@@ -24,10 +25,10 @@ const handleEventReducer = (state = initState, action) => {
         error: null
       }
     
-    case actiontypes().handleEvent.handleEventFailure: 
+    case actiontypes().handleEvent.createEventFailure: 
       return {
         ...state,
-        data: null,
+        data: [],
         loading: false,
         error: action.payload
       }

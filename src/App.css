@@ -2,6 +2,7 @@
   margin-block: 3rem;
   margin-inline: 2rem;
   background-color: #f3f3f3;
+  min-width: 375px;
   width: 650px;
   min-height: 550px;
   max-height: 550px;
@@ -20,4 +21,12 @@ textarea {
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.026);
 }
-
+.form-control {
+  outline: transparent;
+  border: transparent;
+}
+.form-control:focus{
+  outline: 2px solid var(--primary-color);
+  box-shadow: none; 
+  -webkit-box-shadow: none;
+} 

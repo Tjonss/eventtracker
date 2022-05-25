@@ -15,7 +15,7 @@ const eventsReducer = (state = initState, action) => {
         loading: true,
         error: null
       }
-    
+
     case actiontypes().events.getEventsSuccess: 
       return {
         ...state,

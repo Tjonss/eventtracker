@@ -1,0 +1,42 @@
+.error-hidden {
+  visibility: hidden;
+}
+.error {
+  position: absolute;
+  visibility: visible;
+  color: red;
+  margin-top: .2em;
+  margin-left: .3em;
+  font-size: .8em;
+  padding: 0;
+  letter-spacing: .2px;
+}
+.error-date {
+  font-size: .8em;
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  visibility: visible;
+  color: red;
+  width: 100%;
+  margin-top: .2em;
+  margin-left: .3em;
+  margin-bottom: 0;
+  font-size: .8em;
+  padding: 0;
+}
+.error-date-md {
+  color: red;
+  left: 30px; bottom: 100px;
+  font-size: .8em;
+  position: absolute;
+}
+.error-register {
+  color: red;
+  /* left: 30px;  */
+  bottom: 100px;
+  font-size: .8em;
+  position: absolute;
+  bottom: -20px;
+}
+

@@ -6,13 +6,12 @@ export const createNewEvent = (event) => {
     dispatch(createEvent(true))
     try {
       const res = await axios.post('http://localhost:8080/events', event)
-      dispatch(handleEventSuccess(res.data))
+      dispatch(createEventSuccess(res.data))
     } catch (err) {
-      dispatch(handleEventFailure(err.message))
+      dispatch(createEventFailure(err.message))
     }
   }
 }
-
 
 
 const createEvent = (payload) => {
@@ -22,16 +21,16 @@ const createEvent = (payload) => {
   }
 }
 
-const handleEventSuccess = (event) => {
+const createEventSuccess = (event) => {
   return {
-    type: actiontypes().handleEvent.handleEventSuccess,
+    type: actiontypes().handleEvent.createEventSuccess,
     payload: event
   }
 }
 
-const handleEventFailure = (err) => {
+const createEventFailure = (err) => {
   return {
-    type: actiontypes().handleEvent.handleEventFailure,
+    type: actiontypes().handleEvent.createEventFailure,
     payload: err
   }
 }
