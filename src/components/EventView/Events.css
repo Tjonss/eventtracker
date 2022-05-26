@@ -11,8 +11,9 @@
 }
 .Event-card .card-header {
   max-height: 50px;
-  background-color:#C48E90;
-  color: rgb(255, 255, 255);
+  background-color:var(--primary-color);
+  /* color: rgb(255, 255, 255); */
+  color: #fff;
 }
 .Event-card a {
   color: rgb(61, 61, 61);
@@ -130,4 +131,8 @@
 .card-spacing {
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.arrow-clr {
+  color: var(--primary-color);
 }

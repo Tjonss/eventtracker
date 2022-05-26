@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useEffect } from 'react'
 import { getOneEvent } from '../store/actions/eventAction' 
 import moment from 'moment'
+import Loading from '../components/Loader/Loading'
 
 const EventDetail = () => {
 
@@ -22,7 +23,7 @@ const EventDetail = () => {
         <div className='text-center mt-3 custom-border w-100 mx-auto'>
           <span className='text-uppercase h4'>this event</span>
         </div>
-        <Link to='/events' className='text-black fs-3'><i className="fa-solid fa-arrow-left-long"></i></Link>
+        <Link to='/events' className='text-black fs-3'><i className="fa-solid fa-arrow-left-long arrow-clr"></i></Link>
         { event &&
           <div className="container card Event-detail example-2 mx-auto scrollbar-cyan thin pe-2">
             <div className=" text-center fs-3 p-0 card-header mt-1">
@@ -37,7 +38,7 @@ const EventDetail = () => {
           </div>
         }
 
-        { loading && <p>Loading...</p>}
+        { loading && <Loading />}
         
       </div>  
     </>

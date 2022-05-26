@@ -3,7 +3,8 @@ import actiontypes from '../actiontypes';
 const initState = {
   token: null,
   loading: false,
-  error: null
+  error: null,
+  userId: null
 }
 
 const authReducer = (state = initState, action) => {
@@ -17,9 +18,12 @@ const authReducer = (state = initState, action) => {
       }
 
     case actiontypes().auth.authSuccess:
+      localStorage.setItem('token', action.payload)
+      localStorage.setItem('userId', action.userId)
       return {
         ...state,
         token: action.payload,
+        userId: action.userId,
         loading: false,
         error: null
       }
@@ -32,10 +36,11 @@ const authReducer = (state = initState, action) => {
         error: action.payload
       }
     
-    
     case actiontypes().auth.logout:
+      localStorage.removeItem('token')
+      localStorage.removeItem('userId')
       return {
-        ...initState
+        ...initState,
       }
 
     default: 

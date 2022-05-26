@@ -1,5 +1,5 @@
 import './Create.css'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { createNewEvent } from '../../store/actions/handleEventActions'
 import { useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
@@ -10,21 +10,31 @@ const CreateForm = () => {
   
   const dispatch = useDispatch()
   const navigate = useNavigate()
+  
+  const { token, userId } = useSelector(state => state.auth)
 
   const [loggedIn, setLoggedIn] = useState(false)
-  
+
   const { register, handleSubmit, formState: { errors } } = useForm();
 
+ 
+
   const onSubmit = (formData) => {
+    const payload = {
+        ...formData,
+        userId: userId
+    }
     setLoggedIn(true)
-    dispatch(createNewEvent(formData))
+    dispatch(createNewEvent(payload))
   }
+
+
   useEffect(() => {
     if(loggedIn)
     navigate('/events')
   }, [loggedIn, navigate])
   
-  return (
+  return ( 
     <form onSubmit={handleSubmit(onSubmit)} className='create-event'>
       <div className="mt-2 mt-md-3">
         <div className="mb-4 mb-md-4 position-relative">

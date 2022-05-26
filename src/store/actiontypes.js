@@ -2,6 +2,7 @@ const actiontypes = () => {
   return {
     events: {
       getEvents: 'GET_EVENTS',
+      clearEvents: 'CLEAR_EVENTS',
       getEventsSuccess: 'GET_EVENTS_SUCCESS',
       getEventsFailure: 'GET_EVENTS_FAILURE'
     },

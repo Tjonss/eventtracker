@@ -18,7 +18,6 @@ const HomeView = () => {
     } 
   }, [user, navigate])
   
-  //aefdsagadgdsnjg ähr är duddkm
   return (
     <>
       { loggedIn 

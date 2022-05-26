@@ -1,87 +1,104 @@
 {
   "events": [
     {
-      "title": "asd",
-      "desc": "asd",
-      "timestamps": "2022-06-18T00:51",
+      "title": "Mattias",
+      "desc": "mattias",
+      "timestamps": "2022-05-28T21:29",
+      "userId": 4,
       "id": 1
     },
     {
-      "title": "jsodfnaosdf",
-      "desc": "asdasdasdasdasd",
-      "timestamps": "2022-05-29T00:56",
+      "title": "jonas",
+      "desc": "asdfasd",
+      "timestamps": "2022-05-06T21:31",
+      "userId": 1,
       "id": 2
     },
     {
-      "title": "asdasdasd",
-      "desc": "asdasdasd",
-      "timestamps": "2022-05-14T01:07",
+      "title": "mattias2",
+      "desc": "mattias2",
+      "timestamps": "2022-05-26T21:34",
+      "userId": 4,
       "id": 3
     },
     {
-      "title": "adfsdfasdfasdfasdfasdfasdfasdfas",
-      "desc": "asdfasdfasdf",
-      "timestamps": "2022-04-29T01:07",
+      "title": "sdfgsdfg",
+      "desc": "dsfgsdfgsdfg",
+      "timestamps": "2022-05-21T02:09",
+      "userId": 1,
       "id": 4
     },
     {
-      "title": "adsfsdfas",
-      "desc": "asdfasdfasd",
-      "timestamps": "2022-05-27T01:09",
+      "title": "sdfgsdfg",
+      "desc": "sdfgsdfg",
+      "timestamps": "2022-05-07T22:10",
+      "userId": 1,
       "id": 5
     },
     {
-      "title": "asdfasdfasdf",
-      "desc": "asdf",
-      "timestamps": "2022-05-01T03:06",
+      "title": "sdgfsdfg",
+      "desc": "sdfgsdfg",
+      "timestamps": "2022-05-07T22:10",
+      "userId": 1,
       "id": 6
     },
     {
-      "title": "asdasdasdasdasdasdasdasdasdasd",
-      "desc": "asdasd{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}as",
-      "timestamps": "2022-05-06T01:23",
+      "title": "sdfsdf",
+      "desc": "sdfsdf",
+      "timestamps": "2022-05-21T22:14",
+      "userId": 1,
       "id": 7
     },
     {
-      "title": "jonas",
-      "desc": "hej jag heter j{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}vonas",
-      "timestamps": "2022-05-22T01:27",
+      "title": "sdfsdf",
+      "desc": "sdfsdf",
+      "timestamps": "2022-05-13T22:10",
+      "userId": 1,
       "id": 8
     },
     {
-      "title": "hej",
-      "desc": "hejekfanöfsdfönasdfasdfasdfasdf{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}{moment(event.timestamps).fromNow()}",
-      "timestamps": "2022-05-15T01:28",
+      "title": "sdfsdf",
+      "desc": "sdfsdf",
+      "timestamps": "2022-05-05T22:10",
+      "userId": 1,
       "id": 9
     },
     {
-      "title": "eafkösenfkasndfaskjdnöfkjamsdf",
-      "desc": "adsfasd",
-      "timestamps": "2022-05-28T07:33",
+      "title": "dsfsdf",
+      "desc": "sdfsdfsdf",
+      "timestamps": "2022-05-05T22:14",
+      "userId": 1,
       "id": 10
     }
   ],
   "users": [
     {
-      "email": "jonas@mail.se",
-      "password": "$2a$10$lWcazsxHIJtPbFq3OxNnceAWjxyB4c5IC0s7Es8WXc0T8A0XK8wsi",
+      "email": "jonas@mail.com",
+      "password": "$2a$10$Sn6.x8QtNzznTwrJ2cITKujaa9vRZcBTIeQ1PqJ3QOWRR4F.8W3cu",
       "firstName": "jonas",
       "lastName": "engström",
       "id": 1
     },
     {
-      "email": "jonasjonas@mail.se",
-      "password": "$2a$10$s1XWxlyzugSz5HLkldMNNu1toXXcHCFTeym.Z3QIvu4dEx9X66Bcq",
-      "firstName": "jonas",
-      "lastName": "jonas",
+      "email": "linus@mail.se",
+      "password": "$2a$10$uVywR.RZIhnmhoO9NWjLT.Vv4ysv8UIG9oLg9LLyHsqj21hS3nEGK",
+      "firstName": "linus",
+      "lastName": "engström",
       "id": 2
     },
     {
-      "email": "conny@mail.se",
-      "password": "$2a$10$lHpUBeR58Xb7/R6xR9eyy.hxyZEL9Vy71lW44YBC1qQMoHvhFQf86",
-      "firstName": "jonas",
-      "lastName": "conny",
+      "email": "tobias@mail.se",
+      "password": "$2a$10$J4pO17AafeDW453cybOcnePNw3MItAOk37G0inAI/rgJZurQAA2f2",
+      "firstName": "tobias",
+      "lastName": "engström",
       "id": 3
+    },
+    {
+      "email": "mattias@mail.com",
+      "password": "$2a$10$h.z3RwaGLLoh..lJxKglPOoAz4/z4DwOdjfO5zccm8C8Yp6Q5ct1u",
+      "firstName": "mattias",
+      "lastName": "engström",
+      "id": 4
     }
   ]
 }

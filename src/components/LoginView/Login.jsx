@@ -10,7 +10,6 @@ const Login = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
-  
 
   const { register, handleSubmit, formState: { errors } } = useForm();
 
@@ -22,7 +21,7 @@ const Login = () => {
   }
   useEffect(() => {
       if(user) {
-        navigate('/profile')
+        navigate('/events')
       }
     }, [user, navigate])
  

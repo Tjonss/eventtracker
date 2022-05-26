@@ -1,18 +1,24 @@
 import actiontypes from '../actiontypes';
 import axios from 'axios';
 
-export const createNewEvent = (event) => {
+export const createNewEvent = (payload, token) => {
   return async dispatch => {
     dispatch(createEvent(true))
     try {
-      const res = await axios.post('http://localhost:8080/events', event)
-      dispatch(createEventSuccess(res.data))
+      const res = await axios.post('http://localhost:8080/events', payload, {
+        headers: {
+          'Authorization': 'Bearer' + token
+        }
+      })
+      if(res.status === 201) {
+        dispatch(createEventSuccess(res.data))
+
+      }
     } catch (err) {
       dispatch(createEventFailure(err.message))
     }
   }
 }
-
 
 const createEvent = (payload) => {
   return {
@@ -21,10 +27,10 @@ const createEvent = (payload) => {
   }
 }
 
-const createEventSuccess = (event) => {
+const createEventSuccess = (payload) => {
   return {
     type: actiontypes().handleEvent.createEventSuccess,
-    payload: event
+    payload
   }
 }
 

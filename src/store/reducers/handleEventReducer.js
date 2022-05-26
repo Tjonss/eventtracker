@@ -3,7 +3,7 @@ import actiontypes from '../actiontypes';
 const initState = {
   data: [],
   loading: false,
-  error: null
+  error: null,
 }
 
 const handleEventReducer = (state = initState, action) => {

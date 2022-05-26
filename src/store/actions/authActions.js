@@ -1,25 +1,15 @@
 import axios from 'axios';
 import actiontypes from '../actiontypes';
+import jwt_decode from 'jwt-decode'
 
 
-// export const registerUser = (user) => {
-//   return async dispatch => {
-//     dispatch(loading(true))
-//     try {
-//       const res = await axios.post('http://localhost:8080/register', user)
-//       dispatch(authSuccess(res.data))
-//     } catch (err) {
-//       dispatch(authFailure(err.message))
-//     }
-//   }
-// }
 export const registerUser = user => {
   return dispatch => {
     dispatch(loading())
     axios.post('http://localhost:8080/register', user)
       .then(res => {
         if(res.status === 201) {
-          dispatch(authSuccess(res.data.accessToken))
+          dispatch(authSuccess(res.data.accessToken, res.data.user.id))
         }
       })
       .catch(err => {
@@ -32,11 +22,32 @@ export const loginUser = user => {
     dispatch(loading())
     axios.post('http://localhost:8080/login', user)
       .then(res => {
-        dispatch(authSuccess(res.data.accessToken))
+        dispatch(authSuccess(res.data.accessToken, res.data.user.id))
       })
   }
 }
+export const logout = () => {
+  return {
+    type: actiontypes().auth.logout,
+  }
+}
 
+export const checkUser = () => {
+  return dispatch => {
+    let token = localStorage.getItem('token')
+    let userId = localStorage.getItem('userId')
+    if(token) {
+      if(jwt_decode(token).exp * 1000 > Date.now()) {
+        dispatch(authSuccess(token, userId))
+      }
+      else {
+        localStorage.removeItem('token')
+        localStorage.removeItem('userId')
+        dispatch(logout())
+      }
+    }
+  }
+}
 
 
   
@@ -46,10 +57,11 @@ const loading = () => {
   }
 }
 
-const authSuccess = (token) => {
+const authSuccess = (token, userId) => {
   return {
     type: actiontypes().auth.authSuccess,
-    payload: token
+    payload: token,
+    userId: userId
   }
 }
 
@@ -60,9 +72,3 @@ const authFailure = (err) => {
   }
 }
 
-export const logout = (payload) => {
-  return {
-    type: actiontypes().auth.logout,
-    payload
-  }
-}
