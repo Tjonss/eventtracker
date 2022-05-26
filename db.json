@@ -1,34 +1,8 @@
 {
   "events": [
-    {
-      "title": "asdasd",
-      "desc": "asdas",
-      "timestamps": "2022-05-28T04:27",
-      "userId": 1,
-      "id": 1
-    },
-    {
-      "title": "asda",
-      "desc": "asdas",
-      "timestamps": "2022-05-27T00:47",
-      "userId": "1",
-      "id": 2
-    },
-    {
-      "title": "asdasd",
-      "desc": "asdasd",
-      "timestamps": "2022-05-29T00:50",
-      "userId": "1",
-      "id": 3
-    }
+ 
   ],
   "users": [
-    {
-      "email": "jonas@mail.se",
-      "password": "$2a$10$Y7NDk6L5Hf.jMUZ0Fv1tBODruzPNpH6aydzgVc0yhys06YApsWy7G",
-      "firstName": "jonas",
-      "lastName": "jonas",
-      "id": 1
-    }
+   
   ]
 }
