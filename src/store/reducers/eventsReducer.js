@@ -20,7 +20,7 @@ const eventsReducer = (state = initState, action) => {
       return {
         ...initState
       }
-
+    
     case actiontypes().events.getEventsSuccess: 
       return {
         ...state,
@@ -40,8 +40,6 @@ const eventsReducer = (state = initState, action) => {
     default:
       return state
     }
-  }
-
-
+}
 
 export default eventsReducer

@@ -11,13 +11,12 @@ const CreateForm = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
   
-  const { token, userId } = useSelector(state => state.auth)
+  const { userId } = useSelector(state => state.auth)
 
   const [loggedIn, setLoggedIn] = useState(false)
 
   const { register, handleSubmit, formState: { errors } } = useForm();
 
- 
 
   const onSubmit = (formData) => {
     const payload = {

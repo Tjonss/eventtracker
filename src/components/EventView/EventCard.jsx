@@ -16,7 +16,6 @@ const EventCard = ({ event }) => {
           <Link to={`/events/${event.id}`} className="pb-3 pe-2 me-5">
             <div className='mt-2 me-3'>
               <small className='ps-2 fst-italic'>{event.desc.slice(0, 50)}...</small>
-              {/* <span className='ps-2 fst-italic'>{event.desc > 50 && event.desc.slice(0, 2)}</span> */}
             </div>
           </Link>
         </li>

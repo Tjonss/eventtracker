@@ -8,7 +8,6 @@ import { checkUser } from './store/actions/authActions';
 
 function App() {
 
-
   const dispatch = useDispatch()
 
   useEffect(() => {

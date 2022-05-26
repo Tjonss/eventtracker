@@ -2,8 +2,9 @@ import './LoginView.css'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { registerUser } from '../../store/actions/authActions'
-import { useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
+import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const Register = () => {
 
@@ -11,6 +12,7 @@ const Register = () => {
   const navigate = useNavigate()
 
   const { register, handleSubmit, formState: { errors } } = useForm();
+  const user = useSelector(state => state.auth.token)
 
   const loading = useSelector(state => state.auth.loading)
 
@@ -18,6 +20,12 @@ const Register = () => {
   const onSubmit = (formData) => {
     dispatch(registerUser(formData))
   }
+  
+  useEffect(() => {
+    if(user) {
+      navigate('/events')
+    }
+  }, [user, navigate])
  
   return (
     

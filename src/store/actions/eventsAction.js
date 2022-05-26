@@ -23,12 +23,14 @@ export const clearEvents = () => {
     type: actiontypes().events.clearEvents,
   }
 }
+
 const setEvents = payload => {
   return {
     type: actiontypes().events.getEvents,
     payload
   }
 }
+
 const getEventsSuccess = events => {
   return {
     type: actiontypes().events.getEventsSuccess,
