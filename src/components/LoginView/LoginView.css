@@ -9,3 +9,10 @@
 .error-register small {
   color: red;
 }
+.exists-error {
+  color: red;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 47px;
+}

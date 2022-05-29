@@ -22,13 +22,12 @@ export const loginUser = user => {
     dispatch(loading())
     axios.post('http://localhost:8080/login', user)
       .then(res => {
+        if(res.status === 200)
         dispatch(authSuccess(res.data.accessToken, res.data.user.id))
       })
-  }
-}
-export const logout = () => {
-  return {
-    type: actiontypes().auth.logout,
+      .catch(err => {
+        dispatch(authFailure(err.message))
+      })
   }
 }
 
@@ -49,8 +48,12 @@ export const checkUser = () => {
   }
 }
 
+export const logout = () => {
+  return {
+    type: actiontypes().auth.logout,
+  }
+}
 
-  
 const loading = () => {
   return {
     type: actiontypes().auth.loading,

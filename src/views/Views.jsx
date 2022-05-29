@@ -12,7 +12,7 @@ const Views = () => {
   return (
     <Routes>
       <Route path='/' element={ <HomeView /> } />
-      <Route path='/login'    element={ <Login /> } />
+      <Route path='/login' element={ <Login /> } />
       <Route path='/register' element={ <Register /> } />
 
       <Route path='/events' element={ 
@@ -25,11 +25,11 @@ const Views = () => {
           <EventDetailsViews />
         </ProtectedRoute>
       } />
-      <Route path='/create'   element={ 
+      <Route path='/create' element={ 
         <ProtectedRoute>
           <CreateView />
         </ProtectedRoute> } />
-      <Route path='/profile'  element={ 
+      <Route path='/profile' element={ 
         <ProtectedRoute>
           <ProfileView />
         </ProtectedRoute> }  />

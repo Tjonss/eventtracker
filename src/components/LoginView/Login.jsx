@@ -1,20 +1,22 @@
+import './LoginView.css'
 import { useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import { useDispatch, useSelector } from 'react-redux'
 import { loginUser } from '../../store/actions/authActions'
-import './LoginView.css'
 
 
 const Login = () => {
+
   const dispatch = useDispatch()
   const navigate = useNavigate()
-
 
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   const loading = useSelector(state => state.auth.loading)
   const user = useSelector(state => state.auth.token)
+  const error = useSelector(state => state.auth.error)
+
   
   const onSubmit = (formData) => {
     dispatch(loginUser(formData))
@@ -39,7 +41,9 @@ const Login = () => {
               placeholder='Enter your email address'
               id="email" 
               className="form-control p-2"
-              {...register("email", {required: 'You need to enter your email address.', unique: true} )}
+              {...register("email", {
+                required: 'You need to enter your email address.', 
+                unique: true} )}
               />
             {errors.email && <small className='error-register'>{errors.email.message}</small> }
           </div>
@@ -51,14 +55,16 @@ const Login = () => {
               placeholder='Enter your password' 
               id="password" 
               className="form-control p-2" 
-              {...register("password", {required: 'You need to enter a password.', 
+              {...register("password", 
+              {required: 'You need to enter a password.', 
               minLength: {value: 6, message: 'Your password must be atleast 6 characters long.'}})}/>
             {errors.password && <small className='error-register'>{errors.password.message}</small> }
           </div>
-          <div className='p-2 text-center Login'>
-            <button className="btn btn-sm btn-primary btn-clr btn-block">{loading ? 'Logging in' : 'Login'}</button> 
-            <div className="mt-2">
-              <Link to={'/register'} className='switch-btn text-center mt-1 cursor-pointer'>
+          <div className='p-2 text-center Login position-relative'>
+            <button className="btn btn-sm btn-clr btn-block">{loading ? 'Logging in' : 'Login'}</button>
+            <small className='exists-error'>{error && 'Email or password was incorrect.'}</small>
+            <div className="mt-4">
+              <Link to={'/register'} className='switch-btn text-center cursor-pointer'>
                 <small className='fs-6'>Create an account</small>
               </Link>
             </div>

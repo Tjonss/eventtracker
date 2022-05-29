@@ -7,9 +7,11 @@ import { useEffect, useState } from 'react'
 const ProfileView = () => {
 
   const { data: events, loading } = useSelector(state => state.events)
+
   
   const [pastEvents, setPastEvents] = useState([])
   const [showUpcoming, setShowUpcoming] = useState([])
+
   const [showHistory, setShowHistory] = useState(false)
 
   useEffect(() => {

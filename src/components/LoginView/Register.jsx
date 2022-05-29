@@ -12,9 +12,10 @@ const Register = () => {
   const navigate = useNavigate()
 
   const { register, handleSubmit, formState: { errors } } = useForm();
+  
   const user = useSelector(state => state.auth.token)
-
   const loading = useSelector(state => state.auth.loading)
+  const error = useSelector(state => state.auth.error)
 
  
   const onSubmit = (formData) => {
@@ -76,12 +77,13 @@ const Register = () => {
             {...register("password", 
             {required: 'You need to enter a password.', 
             minLength: {value: 6, message: 'Your password must be atleast 6 characters long.'}})}/>
-          {errors.password && <small className='error-register'>{errors.password.message}</small> }    
+          {errors.password && <small className='error-register'>{errors.password.message}</small> }  
         </div>
-        <div className='p-2 text-center Login'>
+        <div className='p-2 text-center Login position-relative'>
           <button className="btn btn-sm btn-clr btn-block">{loading ? 'Creating account' : 'Sign up'}</button> 
-          <div className='mt-2'>
-            <Link to={'/login'} className='switch-btn text-center mt-1 cursor-pointer'>
+          {error && <small className='exists-error'>An account with this email already exists.</small>}
+          <div className='mt-4'>
+            <Link to={'/login'} className='switch-btn text-center cursor-pointer'>
               <small className='fs-6'>Already have an account?</small>
             </Link>
           </div>
