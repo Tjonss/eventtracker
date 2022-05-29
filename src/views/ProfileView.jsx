@@ -39,10 +39,8 @@ const ProfileView = () => {
           : showUpcoming.map(event => <ProfileCard key={event.id} event={event}/>) 
         } 
         </div>
-      
-       
       </div>    
-     </>
+    </>
   )
 }
 

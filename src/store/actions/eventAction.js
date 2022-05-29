@@ -33,4 +33,3 @@ const getSingleEventFailure = (payload) => {
     payload
   }
 }
-

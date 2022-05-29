@@ -12,7 +12,6 @@ export const createNewEvent = (payload, token) => {
       })
       if(res.status === 201) {
         dispatch(createEventSuccess(res.data))
-
       }
     } catch (err) {
       dispatch(createEventFailure(err.message))

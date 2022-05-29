@@ -27,6 +27,7 @@ const eventReducer = (state = initState, action) => {
         error: null
       }
     }
+
     case actiontypes().singleEvent.getSingleEventFailure: {
       return {
         ...state,
@@ -35,11 +36,10 @@ const eventReducer = (state = initState, action) => {
         error: action.payload
       }
     }
-
+    
     default:
       return state
   }
-
 }
 
 export default eventReducer

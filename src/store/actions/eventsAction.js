@@ -43,4 +43,3 @@ const getEventsFailure = err => {
     payload: err
   }
 }
-

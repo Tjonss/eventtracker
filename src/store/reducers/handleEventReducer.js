@@ -38,5 +38,4 @@ const handleEventReducer = (state = initState, action) => {
   }
 }
 
-
 export default handleEventReducer

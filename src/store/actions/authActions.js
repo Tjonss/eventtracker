@@ -74,4 +74,3 @@ const authFailure = (err) => {
     payload: err
   }
 }
-
