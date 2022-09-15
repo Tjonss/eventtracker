@@ -1,3 +1,5 @@
+start jsonserver - $ json-server db.json -m ./node_modules/json-server-auth --port 8080
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
